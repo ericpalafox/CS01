@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double celsius, farenheit;
+
+    cout << "Enter temperature in degrees Celsius: ";
+    cin >> celsius;
+
+    farenheit = (9.0/5.0)*celsius + 32;
+
+    cout << setprecision(1) <<fixed;
+    cout << celsius << "C is equivalent to ";
+    cout << farenheit << "F\n";
+
+    return 0;
+}
